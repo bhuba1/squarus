@@ -5,7 +5,7 @@ Név: Balazsits Huba
 Neptun: KE0ZJP
 game: Squarus
 */
-//test
+//tester
 /*!!WARNING SPAGHETTI CODE IN HERE!!*/
 var gameArea = $('<div id = "game_area"></div>');
 var map = 1;
