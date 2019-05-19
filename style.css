@@ -1,0 +1,194 @@
+body {
+    background-color: white;
+    background-image: url("water.gif");
+
+    z-index: -2000;
+}
+p{
+    margin-top: 40px;
+}
+#game_area {
+
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -250px;
+
+    /*box-shadow: 1px 1px 3px gray;*/
+}
+#player {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+
+    /*border: 1px solid blue;*/
+    z-index: 1;
+    background-image: url("player_d.png");
+    background-size: 50px 50px;
+    /*box-shadow: inset 0 0 10px #000000;*/
+    border-radius: 360px;
+}
+
+.cannon_r {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background-image: url("laserCannon_r.png");
+    background-size: 50px 50px;
+}
+
+.cannon_l {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background-image: url("laserCannon_l.png");
+    background-size: 50px 50px;
+}
+.cannon_u {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background-image: url("laserCannon_u.png");
+    background-size: 50px 50px;
+}
+
+.cannon_d {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background-image: url("laserCannon_d.png");
+    background-size: 50px 50px;
+}
+.laser_r {
+    opacity: 0.8;
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    z-index: 1;
+    background-image: url("laser_r.gif");
+    background-size: 50px 20px;
+    box-shadow: 0 4px 4px -4px darkred;
+
+}
+.laser_u {
+    opacity: 0.8;
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    z-index: 1;
+    background-image: url("laser_u.gif");
+    background-size: 20px 50px;
+    box-shadow: 0 4px 4px -4px darkred;
+
+}
+.laser_hint {
+    position: absolute;
+    top: 175px;
+    left: 180px;
+    width: 40px;
+    height: 25px;
+    z-index: 1;
+    background-image: url("laser_r.gif");
+    background-size: 40px 25px;
+}
+.block {
+    position: absolute;
+    z-index: 0;
+    border: 1px solid gray;
+    width: 49px;
+    height: 49px;
+    background-color: lightgray;
+    box-shadow: 6px 4px 5px 0px rgba(0,0,0,0.53);
+    background-image: url("floor2.jpg");
+    background-size: 50px 50px;
+}
+.box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: dimgray;
+
+    z-index: 1;
+    background-image: url("box.PNG");
+    background-size: 50px 50px;
+    box-shadow: 6px 4px 4px 1px rgba(0,0,0,0.53);
+
+}
+
+.box_hint {
+    position: absolute;
+    top: 105px;
+    left: 155px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background-image: url("box.PNG");
+    background-size: 50px 50px;
+    box-shadow: 6px 4px 4px 1px rgba(0,0,0,0.53);
+}
+.blocked {
+    background-image: none;
+    background-color: transparent;
+    box-shadow:none;
+    border: none;
+    z-index: -1;
+}
+.win_block {
+    background-image: none;
+    background-color: aquamarine;
+}
+.win_block_hint {
+    opacity: 1;
+    position: absolute;
+    top: 220px;
+    left: 160px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+
+
+    box-shadow: 6px 4px 4px 1px rgba(0,0,0,0.53);
+    background-color: aquamarine;
+}
+.hint_box {
+    color: white;
+    position: absolute;
+    opacity: 0.7;
+    padding: 20px;
+    border-radius: 0px 0px 0px 60px;
+    background-color: black;
+    z-index: 3;
+
+    right: 0;
+    top: 0;
+}
+#score_box {
+    color: white;
+    position: absolute;
+    opacity: 0.7;
+    padding: 10px;
+    border-radius: 0px 0px 60px 0px;
+    background-color: black;
+    z-index: 3;
+
+    left: 0;
+    top: 0;
+}
+#score_box p{
+   margin-top: 5px;
+}
+.heart {
+    width: 50px;
+    height: 50px;
+    background-image: url('heart-icon.png');
+    background-size: 50px 50px;
+    display: inline-block;
+}
+
